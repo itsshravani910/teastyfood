@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Food Order</title>
+</head>
+<body>
+ <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="menucard.html">menu</a>
+<a href="about.html">about</a>
+<a href="order.html">order</a>
+        </nav>
+    </header>
+    <hr>
+  <h1>🍔 Online Food Order</h1>
+
+  <form action="submit_order.php" method="post">
+    
+    <h2>🧾 Menu</h2>
+
+    <label>
+      🍅 Tomato Soup – ₹80<br>
+      Quantity:
+      <input type="number" name="tomato_soup_qty" min="0" value="0">
+    </label>
+    <br><br>
+
+    <label>
+      🧀 Paneer Tikka – ₹150<br>
+      Quantity:
+      <input type="number" name="paneer_tikka_qty" min="0" value="0">
+    </label>
+    <br><br>
+
+    <label>
+      🍚 Veg Biryani – ₹160<br>
+      Quantity:
+      <input type="number" name="veg_biryani_qty" min="0" value="0">
+    </label>
+    <br><br>
+
+    <label>
+      🥡 Manchurian – ₹130<br>
+      Quantity:
+      <input type="number" name="manchurian_qty" min="0" value="0">
+    </label>
+    <br><br>
+
+    <h2>👤 Customer Details</h2>
+
+    <label>
+      Full Name: <input type="text" name="customer_name" required>
+    </label>
+    <br><br>
+
+    <label>
+      Phone Number: <input type="tel" name="customer_phone" required>
+    </label>
+    <br><br>
+
+    <label>
+      Delivery Address:<br>
+      <textarea name="customer_address" rows="4" cols="40" required></textarea>
+    </label>
+    <br><br>
+
+    <button type="submit">🛒 Place Order</button>
+
+  </form>
+
+</body>
+</html>
